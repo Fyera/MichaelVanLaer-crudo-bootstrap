@@ -1,0 +1,85 @@
+$yellow: #ffce4d;
+$green: #6dccaa;
+$brown:#EBCD9B;
+$mint: #C1E092;
+// Navbar Styling
+.navbar a {
+    font-weight: bold;
+}
+
+.social {
+    bottom: 0;
+    i {
+        font-size: 4rem;
+    }
+}
+
+section h2 {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        border-bottom: 1px solid black;
+        width: 9%;
+        left: 0;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.col-md-6.text-right {
+    h2 {
+        &:after {
+            right: 0;
+            left: unset;
+        }
+    }
+}
+
+section {
+    &.yellow-background {
+        background-color: $yellow;
+    }
+    &.green-background {
+        background-color: $green;
+    }
+    &.brown-background {
+        background-color: $brown;
+    }
+    &.mint-background {
+        background-color: $mint;
+    }
+}
+
+.img-parallax {
+    object-fit: contain;
+}
+
+@mixin price() {
+    text-align: right;
+    float: right;
+    font-size: 23px;
+    font-weight: 700;
+    color: #f7c040;
+}
+
+.price-table table td:nth-child(2) {
+    @include price();
+}
+
+tr {
+    border-bottom: 2px dotted $yellow;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: $yellow;
+    border-color: $yellow;
+}
+
+a.google-maps-link {
+    background-color: $yellow;
+    text-decoration: none;
+    transition: 1s ease all;
+    color: #333;
+}

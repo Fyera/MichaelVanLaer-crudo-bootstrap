@@ -1,0 +1,70 @@
+.navbar a {
+    font-weight: bold;
+}
+
+.social {
+    bottom: 0;
+}
+
+.social i {
+    font-size: 4rem;
+}
+
+section h2 {
+    position: relative;
+}
+
+section h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    border-bottom: 1px solid black;
+    width: 9%;
+    left: 0;
+    margin-bottom: 1.2rem;
+}
+
+.col-md-6.text-right h2:after {
+    right: 0;
+    left: unset;
+}
+
+.col-md-6.text-left h2:after {
+    right: unset;
+    left: 0;
+}
+
+section.yellow-background {
+    background-color: #ffce4d;
+}
+
+section.green-background {
+    background-color: #6dccaa;
+}
+
+section.brown-background {
+    background-color: #EBCD9B;
+}
+
+section.mint-background {
+    background-color: #C1E092;
+}
+
+.img-parallax {
+    object-fit: contain;
+}
+
+.price-table table td:nth-child(2) {
+    text-align: right;
+    float: right;
+    font-size: 23px;
+    font-weight: 700;
+    color: #f7c040;
+}
+
+tr {
+    border-bottom: 2px dotted #ffce4d;
+}
+
+
+/*# sourceMappingURL=style.css.map */
