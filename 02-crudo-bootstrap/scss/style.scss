@@ -1,7 +1,35 @@
 $yellow: #ffce4d;
 $green: #6dccaa;
-$brown:#EBCD9B;
-$mint: #C1E092;
+$brown: #ebcd9b;
+$mint: #c1e092;
+.jumbotron {
+    background-color: $green;
+}
+
+.stick-to-top {
+    background-color: white !important;
+}
+
+.swiper-overlay a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.swiper-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    padding: 33px;
+    box-sizing: border-box;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(25, 52, 72, 0) 0%, rgba(25, 52, 72, 0.12) 100%);
+    background: -webkit-linear-gradient(top, rgba(25, 52, 72, 0) 0%, rgba(25, 52, 72, 0.12) 100%);
+    background: linear-gradient(to bottom, rgba(25, 52, 72, 0) 0%, rgba(25, 52, 72, 0.12) 100%);
+}
+
 // Navbar Styling
 .navbar a {
     font-weight: bold;
@@ -37,6 +65,7 @@ section h2 {
 }
 
 section {
+    //border: 10px solid red;
     &.yellow-background {
         background-color: $yellow;
     }
@@ -71,6 +100,7 @@ tr {
     border-bottom: 2px dotted $yellow;
 }
 
+// styling buttons
 .btn-outline-dark:hover {
     color: #fff;
     background-color: $yellow;
@@ -78,8 +108,63 @@ tr {
 }
 
 a.google-maps-link {
-    background-color: $yellow;
+    background-color: #fafafa;
     text-decoration: none;
     transition: 1s ease all;
     color: #333;
+    font-size: 1.5rem;
+    &:hover {
+        color: white;
+        background-color: $yellow;
+    }
+}
+
+ul.openingsuren {
+    //border: 1px solid red;
+    padding: 0;
+    li {
+        //border: 1px solid green;
+        display: flex;
+        span {
+            &:first-child {
+                //border: 2px dashed hotpink;
+                text-align: right;
+                padding-right: 1rem;
+                font-weight: 700;
+            }
+            flex: 0 0 50%;
+            //border: 1px solid blue;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+footer form {
+    margin: 30px 0;
+}
+
+.copyright {
+    width: inherit;
+    display: block;
+    margin-top: 50px;
+    padding: 30px 0;
+    text-align: left;
+    background: #e6e6e6;
 }
